@@ -29,7 +29,15 @@ img {
 #toggler10:checked~.picture10,
 #toggler11:checked~.picture11,
 #toggler12:checked~.picture12,
-#toggler13:checked~.picture13 {    
+#toggler13:checked~.picture13,
+#toggler14:checked~.picture14,
+#toggler15:checked~.picture15,
+#toggler16:checked~.picture16,
+#toggler17:checked~.picture17,
+#toggler18:checked~.picture18,
+#toggler19:checked~.picture19,
+#toggler20:checked~.picture20,
+#toggler21:checked~.picture21 {    
     display: block;
 }
 label{
