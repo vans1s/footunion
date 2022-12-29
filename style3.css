@@ -37,7 +37,19 @@ img {
 #toggler18:checked~.picture18,
 #toggler19:checked~.picture19,
 #toggler20:checked~.picture20,
-#toggler21:checked~.picture21 {    
+#toggler21:checked~.picture21,
+#toggler22:checked~.picture22,
+#toggler23:checked~.picture23,
+#toggler24:checked~.picture24,
+#toggler25:checked~.picture25,
+#toggler26:checked~.picture26,
+#toggler27:checked~.picture27,
+#toggler28:checked~.picture28,
+#toggler29:checked~.picture29,
+#toggler30:checked~.picture30,
+#toggler31:checked~.picture31,
+#toggler32:checked~.picture32,
+#toggler33:checked~.picture33 {    
     display: block;
 }
 label{

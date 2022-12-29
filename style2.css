@@ -33,11 +33,11 @@ html{
     border-radius: 10px;
 }
 .article-image{
-    height: 40%;
+    height: 70%;
     left: 0;
     top: 0;
     display: block;
-    width: 100%;
+    width: 85%;
     border-radius: 10px;
 }
 .article-body{
