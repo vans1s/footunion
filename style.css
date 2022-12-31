@@ -117,6 +117,7 @@ a{
 }
 .picture img, .labels img{
     height: 100%;
+    width: 100%;
 }
 
 
@@ -234,6 +235,10 @@ transform: scale(1.1);
         justify-content: space-around;
         flex-direction: row;
 }
+.firstrow, .secondrow{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width: 1399.98px) { 
 
 }
@@ -264,3 +269,29 @@ transform: scale(1.1);
         flex-direction: column;
     }
 }
+@media (max-width: 575.98px) {
+    li{
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .firstrow, .secondrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        width: 97%;
+        height: 25%;
+    }
+    .secondrow{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 439.98px) {
+}
+
+
