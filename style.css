@@ -13,7 +13,6 @@ html{
     display: flex;
     flex-direction: column;
     background: #eee;
-    border: 5px solid #ccc;
     padding: 20px;
 
 }
@@ -33,12 +32,11 @@ html{
     border-radius: 10px;
 }
 .article-image{
-    height: 40%;
     left: 0;
     top: 0;
     display: block;
-    width: 100%;
     border-radius: 10px;
+    width: 100%;
 }
 .article-body{
     display: flex;
@@ -61,21 +59,13 @@ a {
 }
 .article-img{
     width: auto;
-    height: 100%;
 }
 .article-imagee{
-    height: 30%;
     left: 0;
     top: 0;
     display: block;
     width: 100%;
-}
-.article-imageee{
-    height: 27%;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 100%;
+    border-radius: 10px;
 }
 ul{
     display: flex;
@@ -107,10 +97,6 @@ li{
     top: 0;
     width: 99%;
 }
-.article-imge{
-    width: auto;
-    height: 80%;
-}
 .light{
     color: rgb(242, 0, 255);
 }
@@ -119,4 +105,162 @@ li{
 }
 a{
     text-decoration: none;
+}
+.picture {    
+    height: 400px;
+    width: 400px;
+    display: none;
+    transition: 0.4s;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.picture img, .labels img{
+    height: 100%;
+}
+
+
+
+#toggler1:checked~.picture1, 
+#toggler2:checked~.picture2,
+#toggler3:checked~.picture3,
+#toggler4:checked~.picture4,
+#toggler5:checked~.picture5,
+#toggler6:checked~.picture6,
+#toggler7:checked~.picture7,
+#toggler8:checked~.picture8,
+#toggler9:checked~.picture9,
+#toggler10:checked~.picture10,
+#toggler11:checked~.picture11,
+#toggler12:checked~.picture12,
+#toggler13:checked~.picture13,
+#toggler14:checked~.picture14,
+#toggler15:checked~.picture15,
+#toggler16:checked~.picture16,
+#toggler17:checked~.picture17,
+#toggler18:checked~.picture18,
+#toggler19:checked~.picture19,
+#toggler20:checked~.picture20,
+#toggler21:checked~.picture21,
+#toggler22:checked~.picture22,
+#toggler23:checked~.picture23,
+#toggler24:checked~.picture24,
+#toggler25:checked~.picture25,
+#toggler26:checked~.picture26,
+#toggler27:checked~.picture27,
+#toggler28:checked~.picture28,
+#toggler29:checked~.picture29,
+#toggler30:checked~.picture30,
+#toggler31:checked~.picture31,
+#toggler32:checked~.picture32,
+#toggler33:checked~.picture33,
+#toggler34:checked~.picture34 {    
+    display: block;
+}
+label{
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    transition: 0.4s;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+input[type="radio"]{
+    display: none;
+}
+label:hover{
+transform: scale(1.1);
+}
+.picture:hover{
+    transform: scale(1.07); 
+}
+.labels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.gallery{
+    margin-top: 115px;
+}
+.tiktokimg:hover{
+    transform: scale(1.07); 
+}
+.telegaimg:hover{
+    transform: scale(1.07); 
+}
+.telegaimg{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 21.5%;
+    margin-top: 200px;
+    transition: 0.4s;
+}
+.tiktokimg{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 21.5%;
+    margin-top: 200px;
+    transition: 0.4s;
+}
+.background{
+    background-image: url(img/Новый\ проект\ \(28\).png);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+.contact{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+}
+@media (max-width: 1399.98px) { 
+
+}
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 991.98px) {
+    li {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    .columns{
+        flex-direction: column;
+    }
+}
+@media (max-width: 767.98px) {
+    li {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+@media (max-width: 575.98px) {
+    li{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .contact{
+        flex-direction: column;
+    }
 }
