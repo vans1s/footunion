@@ -285,13 +285,16 @@ transform: scale(1.1);
     }
     .header{
         width: 97%;
-        height: 25%;
+        height: 15%;
     }
     .secondrow{
         margin-right: 5px;
     }
 }
-@media (max-width: 439.98px) {
+@media (max-width: 414.98px) {
+    .header {
+        height: 11%;
+    }
 }
 
 
