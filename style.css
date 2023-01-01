@@ -225,7 +225,7 @@ transform: scale(1.1);
     transition: 0.4s;
 }
 .background{
-    background-image: url(img/Новый\ проект\ \(28\).png);
+    background-image: url(img/главная\ униона.png);
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -240,7 +240,9 @@ transform: scale(1.1);
     flex-direction: row;
 }
 @media (max-width: 1399.98px) { 
-
+    .background{
+        background-image: url(img/главная\ средняя.png);
+    }
 }
 @media (max-width: 1199.98px) {
 
@@ -253,11 +255,17 @@ transform: scale(1.1);
     .columns{
         flex-direction: column;
     }
+    .background{
+        background-image: url(img/главная\ на\ телефон.png);
+    }
 }
 @media (max-width: 767.98px) {
     li {
         margin-left: 2px;
         margin-right: 2px;
+    }
+    .background{
+        background-image: url(img/650.png);
     }
 }
 @media (max-width: 575.98px) {
@@ -267,6 +275,9 @@ transform: scale(1.1);
     }
     .contact{
         flex-direction: column;
+    }
+    .background{
+        background-image: url(img/абракадабра.png);
     }
 }
 @media (max-width: 575.98px) {
@@ -289,6 +300,9 @@ transform: scale(1.1);
     }
     .secondrow{
         margin-right: 5px;
+    }
+    .background{
+        background-image: url(img/414.png);
     }
 }
 @media (max-width: 414.98px) {
