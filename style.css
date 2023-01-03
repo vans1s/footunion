@@ -1,7 +1,7 @@
 html{
     font-family: Bradley Hand, cursive;
     font-size: 14px;
-    background: rgb(72, 191, 246);
+    background: rgb(4, 111, 160);
 }
 .columns {
     display: flex;
@@ -155,7 +155,9 @@ a{
 #toggler31:checked~.picture31,
 #toggler32:checked~.picture32,
 #toggler33:checked~.picture33,
-#toggler34:checked~.picture34 {    
+#toggler34:checked~.picture34,
+#toggler35:checked~.picture35,
+#toggler36:checked~.picture36 {    
     display: block;
 }
 label{
@@ -224,12 +226,6 @@ transform: scale(1.1);
     margin-top: 200px;
     transition: 0.4s;
 }
-.background{
-    background-image: url(img/главная\ униона.png);
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-}
 .contact{
         display: flex;
         justify-content: space-around;
@@ -239,13 +235,42 @@ transform: scale(1.1);
     display: flex;
     flex-direction: row;
 }
-@media (max-width: 1399.98px) { 
-    .background{
-        background-image: url(img/главная\ средняя.png);
+
+.texttomain {
+    font-size: 4em;
+    color: #3d0e42;
+    text-transform: uppercase;
+    margin-top: 300px;
+    text-align: center;
+    -webkit-box-reflect:below -15px linear-gradient(transparent, #0004);
+    margin-left: 0;
+}
+
+
+.texttomain span {
+    animation: animate 5s linear infinite;
+ }
+
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #3c0e42;
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: rgb(187, 20, 248);
+        text-shadow: 0 0 10px #e003f4, 0 0 20px #e003f4, 0 0 40px #e003f4, 0 0 80px #e003f4, 0 0 160px #e003f4, 0 0 400px #e003f4;
     }
 }
+.texttomain span:nth-child(even){
+    animation-delay: 0.4s
+}
+@media (max-width: 1399.98px) { 
+}
 @media (max-width: 1199.98px) {
-
+    .texttomain{
+        margin-left: 80px;
+    }
 }
 @media (max-width: 991.98px) {
     li {
@@ -255,40 +280,25 @@ transform: scale(1.1);
     .columns{
         flex-direction: column;
     }
-    .background{
-        background-image: url(img/главная\ на\ телефон.png);
-    }
 }
 @media (max-width: 767.98px) {
     li {
         margin-left: 2px;
         margin-right: 2px;
     }
-    .background{
-        background-image: url(img/650.png);
-    }
 }
 @media (max-width: 575.98px) {
     li{
         margin-left: 1px;
         margin-right: 1px;
+        margin-top: 7px;
+        margin-bottom: 7px;
     }
     .contact{
         flex-direction: column;
     }
-    .background{
-        background-image: url(img/абракадабра.png);
-    }
-}
-@media (max-width: 575.98px) {
-    li{
-        margin-left: 1px;
-        margin-right: 1px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-    .contact{
-        flex-direction: column;
+    .texttomain{
+        margin-left: 15px;
     }
     .firstrow, .secondrow{
         display: flex;
@@ -301,13 +311,14 @@ transform: scale(1.1);
     .secondrow{
         margin-right: 5px;
     }
-    .background{
-        background-image: url(img/414.png);
-    }
 }
 @media (max-width: 414.98px) {
     .header {
         height: 11%;
+    }
+    li{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
