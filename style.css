@@ -157,7 +157,8 @@ a{
 #toggler33:checked~.picture33,
 #toggler34:checked~.picture34,
 #toggler35:checked~.picture35,
-#toggler36:checked~.picture36 {    
+#toggler36:checked~.picture36,
+#toggler37:checked~.picture37 {    
     display: block;
 }
 label{
